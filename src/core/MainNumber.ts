@@ -1,4 +1,4 @@
-import { language } from "../fr";
+import { language } from "../french_lang";
 export class MainNumber {
   readonly base = language.base;
   readonly unitExceptions = language.unitExceptions;

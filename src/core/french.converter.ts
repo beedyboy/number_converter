@@ -1,4 +1,3 @@
-import { language } from "../fr";
 import { MainNumber } from "./MainNumber";
 
 export class FrenchConverter extends MainNumber {
@@ -62,7 +61,7 @@ export class FrenchConverter extends MainNumber {
         continue;
       }
 
-      let exception = language.unitExceptions[rest];
+      let exception = this.unitExceptions[rest];
       let num = exception || this.convertToFrench(rest);
       n -= rest * this.scale[i];
       words.push(num + " " + form);
